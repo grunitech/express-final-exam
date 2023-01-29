@@ -29,6 +29,5 @@ export default function validator(req: Request, res: Response, next: NextFunctio
     if (! (weight && weightUnit && height && heightUnit)){
         throw new Error ("Youre missing a param")
     }
-
     next();
 }
